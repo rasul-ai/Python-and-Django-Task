@@ -2,19 +2,33 @@
 
 When developing this Django project, I have used a Python virtual environment. This helps me in maintaining consistency and prevents potential conflicts between different projects. Here's how I have set up and activate a virtual environment for my Django project:
     1. Install Virtualenv: I have installed the virtualenv via pip:
+       '''
        pip install virtualenv
+       '''
     2. Create a Virtual Environment: In my project directory in the terminal and I have run the following command to create a virtual environment named env:
+       '''
        virtualenv env
+       '''
     3. Activate the Virtual Environment: As I used Ubuntu 22.04 operating system, the activation command in this case is :
+       '''
        source env/bin/activate
+       '''
     4. Install Django and Other Dependencies: While the virtual environment is active, I have installed Django and other dependencies for my project using pip:
+       '''
        pip install django
+       '''
 By using a virtual environment, It is ensured that my project dependencies are managed separately from other projects and from the system Python installation, providing a clean and isolated environment for your development work.
 
 
-To build a basic web app with Python and Django and display a table visualization of the provided JSON data on the home page, you can follow these steps:
-    1. Set up Django Project: If you haven't already, create a Django project using django-admin startproject <project_name>.
-    2. Create Django App: Create a Django app within your project using python manage.py startapp <app_name>.
+To build a basic web app with Python and Django and display a table visualization of the provided JSON data on the home page, I have followed these steps:
+    1. Set up Django Project: I have create a Django project using, 
+    '''
+    django-admin startproject <project_name>
+    '''
+    2. Create Django App: I have created a Django app within my project using, 
+    '''
+    python manage.py startapp <app_name>
+    '''
     3. Define Model: Since the data is coming from JSON, you won't need a model for this particular task.
     4. Load JSON Data: You can load the JSON data directly in the view function.
     5. Create Views: Write a view function to handle the rendering of the home page and passing the JSON data to the template.
