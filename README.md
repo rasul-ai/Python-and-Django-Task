@@ -21,7 +21,8 @@ By using a virtual environment, It is ensured that my project dependencies are m
 
 
 To build a basic web app with Python and Django and display a table visualization of the provided JSON data on the home page, I have followed these steps:
-    1. Set up Django Project: I have create a Django project using, 
+orderedList.marker
+    1. Set up Django Project: I have created a Django project using, 
     ```
     django-admin startproject <project_name>
     ```
