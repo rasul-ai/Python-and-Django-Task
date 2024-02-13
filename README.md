@@ -3,9 +3,9 @@
 ## Creating Virtual Environment
 When developing this Django project, I have used a Python virtual environment. This helps me in maintaining consistency and prevents potential conflicts between different projects. Here's how I have set up and activate a virtual environment for my Django project:
      1. Install Virtualenv: I have installed the virtualenv via pip:
-           ```
+          ```
            pip install virtualenv
-           ```
+          ```
     2. Create a Virtual Environment: In my project directory in the terminal and I have run the following command to create a virtual environment named env:
        ```
        virtualenv env
@@ -20,21 +20,15 @@ When developing this Django project, I have used a Python virtual environment. T
       ```
 By using a virtual environment, It is ensured that my project dependencies are managed separately from other projects and from the system Python installation, providing a clean and isolated environment for your development work.
 
-
+## Creating Web App Using Django
 To build a basic web app with Python and Django and display a table visualization of the provided JSON data on the home page, I have followed these steps:
 orderedList.marker
-    1. Set up Django Project: I have created a Django project using, 
-    ```
-    django-admin startproject <project_name>
-    ```
-    2. Create Django App: I have created a Django app within my project using, 
-    ```
-    python manage.py startapp <app_name>
-    ```
-    3. Define Model: Since the data is coming from JSON, you won't need a model for this particular task.
-    4. Load JSON Data: You can load the JSON data directly in the view function.
-    5. Create Views: Write a view function to handle the rendering of the home page and passing the JSON data to the template.
-    6. Create Templates: Design an HTML template to render the table visualization. Iterate through the JSON data to display it in a table format.
+```
+    1. Set up and create Django Project: I have created a Django project using VSCode IDE.
+    2. Load JSON Data: I have load the JSON data directly in the view function.
+    3. Create Views: I have written a view function to handle the rendering of the home page and passing the JSON data to the template.
+    4. Create Templates: I have designed an HTML template to render the table visualization. Iterate through the JSON data to display it in a table format.
+```
 Here's a basic example of how you can implement the above steps:
     1. Create a new Django project:
        Copy code
