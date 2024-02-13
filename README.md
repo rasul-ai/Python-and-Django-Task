@@ -23,13 +23,13 @@ orderedList.marker
     3. Create Views: I have written a view function to handle the rendering of the home page and passing the JSON data to the template.
     4. Create Templates: I have designed an HTML template to render the table visualization. Iterate through the JSON data to display it in a table format.
 ```
-Here's a basic example of how you can implement the above steps:
+Here's a basic example of how I have implement the above steps:
 ```
     1. Create a new Django project:
        django-admin startproject myproject
     2. Create a new Django app:
        python manage.py startapp myapp
-    3. In your views.py file in the myapp directory, define a view function to load the JSON data and render the home page:
+    3. In my views.py file in the myapp directory, I have defined a view function to load the JSON data and render the home page:
        from django.shortcuts import render
        import json
        
@@ -37,8 +37,7 @@ Here's a basic example of how you can implement the above steps:
            with open('./data.json') as f:  ## provide the full directory.
                data = json.load(f)
            return render(request, 'home.html', {'data': data})
-    4. Create a templates directory inside the myapp directory and within it, create a new HTML file named home.html. Inside home.html, you can render the JSON data in a table format:
-       htmlCopy code
+    4. Create a templates directory inside the myapp directory and within it, I created a new HTML file named home.html. Inside home.html, I have rendered the JSON data in a table format:
        <!DOCTYPE html>
        <html lang="en">
        <head>
@@ -75,15 +74,14 @@ Here's a basic example of how you can implement the above steps:
            </table>
        </body>
        </html>
-    5. Update urls.py in the myproject/myproject/ directory to include a URL pattern for the home page:
+    5. I updated urls.py in the myproject/myproject/ directory to include a URL pattern for the home page:
        from django.urls import path
        from myapp.views import home
        
        urlpatterns = [
            path('', home, name='home'),
        ]
-    6. Make sure your JSON file (data.json) is in the root directory of your Django project.
-    7. Run the Django development server:
+    6. Run the Django development server:
        python manage.py runserver
 ```
 Now, if you visit http://127.0.0.1:8001/ in your web browser, you should see a table visualization of the JSON data on the home page.
