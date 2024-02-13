@@ -24,20 +24,19 @@ orderedList.marker
     4. Create Templates: I have designed an HTML template to render the table visualization. Iterate through the JSON data to display it in a table format.
 ```
 Here's a basic example of how you can implement the above steps:
+```
     1. Create a new Django project:
        django-admin startproject myproject
     2. Create a new Django app:
        python manage.py startapp myapp
     3. In your views.py file in the myapp directory, define a view function to load the JSON data and render the home page:
-    ```
-          from django.shortcuts import render
+       from django.shortcuts import render
        import json
        
        def home(request):
            with open('./data.json') as f:  ## provide the full directory.
                data = json.load(f)
            return render(request, 'home.html', {'data': data})
-     ```
     4. Create a templates directory inside the myapp directory and within it, create a new HTML file named home.html. Inside home.html, you can render the JSON data in a table format:
        htmlCopy code
        <!DOCTYPE html>
@@ -77,7 +76,6 @@ Here's a basic example of how you can implement the above steps:
        </body>
        </html>
     5. Update urls.py in the myproject/myproject/ directory to include a URL pattern for the home page:
-       pythonCopy code
        from django.urls import path
        from myapp.views import home
        
@@ -86,6 +84,6 @@ Here's a basic example of how you can implement the above steps:
        ]
     6. Make sure your JSON file (data.json) is in the root directory of your Django project.
     7. Run the Django development server:
-       Copy code
        python manage.py runserver
-Now, if you visit http://127.0.0.1:8000/ in your web browser, you should see a table visualization of the JSON data on the home page.
+```
+Now, if you visit http://127.0.0.1:8001/ in your web browser, you should see a table visualization of the JSON data on the home page.
