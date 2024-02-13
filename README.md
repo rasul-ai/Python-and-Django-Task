@@ -2,6 +2,7 @@
 
 ## Creating Virtual Environment
 When developing this Django project, I have used a Python virtual environment. This helps me in maintaining consistency and prevents potential conflicts between different projects. Here's how I have set up and activate a virtual environment for my Django project:
+```
      1. Install Virtualenv: I have installed the virtualenv via pip:
           ```
            pip install virtualenv
@@ -18,6 +19,7 @@ When developing this Django project, I have used a Python virtual environment. T
        ```
        pip install django
       ```
+```
 By using a virtual environment, It is ensured that my project dependencies are managed separately from other projects and from the system Python installation, providing a clean and isolated environment for your development work.
 
 ## Creating Web App Using Django
